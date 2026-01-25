@@ -257,10 +257,11 @@
 
     <nav class="categories">
         <button class="category-btn active" data-category="all">All</button>
-        <button class="category-btn" data-category="nature">Nature</button>
-        <button class="category-btn" data-category="travel">Travel</button>
         <button class="category-btn" data-category="portrait">Portrait</button>
-        <button class="category-btn" data-category="urban">Urban</button>
+        <button class="category-btn" data-category="nature">Nature</button>
+        <button class="category-btn" data-category="wildlife">Wildlife</button>
+        <button class="category-btn" data-category="pets">Pets</button>
+        <button class="category-btn" data-category="events">Events</button>
     </nav>
 
     <main class="gallery" id="gallery">
@@ -283,68 +284,16 @@
     </footer>
 
     <script>
-        // Sample photo data - Replace with your own photos
+        // Photo data - Add your photos here
+        // Format: { src: "images/Category/filename.jpg", title: "Photo Title", category: "category" }
+        // Categories: portrait, nature, wildlife, pets, events
         const photos = [
-            {
-                src: "https://picsum.photos/800/600?random=1",
-                title: "Mountain Sunrise",
-                category: "nature"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=2",
-                title: "City Lights",
-                category: "urban"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=3",
-                title: "Beach Sunset",
-                category: "travel"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=4",
-                title: "Portrait Study",
-                category: "portrait"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=5",
-                title: "Forest Path",
-                category: "nature"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=6",
-                title: "Street Photography",
-                category: "urban"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=7",
-                title: "Ancient Temple",
-                category: "travel"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=8",
-                title: "Candid Moment",
-                category: "portrait"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=9",
-                title: "Waterfall",
-                category: "nature"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=10",
-                title: "Neon Signs",
-                category: "urban"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=11",
-                title: "Desert Dunes",
-                category: "travel"
-            },
-            {
-                src: "https://picsum.photos/800/600?random=12",
-                title: "Silhouette",
-                category: "portrait"
-            }
+            // Example entries (replace with your actual photos):
+            // { src: "images/Portrait/photo1.jpg", title: "Portrait Photo", category: "portrait" },
+            // { src: "images/Nature/photo1.jpg", title: "Nature Photo", category: "nature" },
+            // { src: "images/Wildlife/photo1.jpg", title: "Wildlife Photo", category: "wildlife" },
+            // { src: "images/Pets/photo1.jpg", title: "Pets Photo", category: "pets" },
+            // { src: "images/Events/photo1.jpg", title: "Events Photo", category: "events" },
         ];
 
         // DOM Elements
